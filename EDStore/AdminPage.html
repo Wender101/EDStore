@@ -20,10 +20,11 @@
         </section>
 
         <section id="parte3Header">
-            <button class="modoClaro" onclick="modoPage()"> <span class="spans">Tema</span></button>
+            <button class="notificacaoBtn"><p class="temNotificacao"></p></button>
+            <button class="modoClaro" onclick="modoPage()"></button>
             <img src="assets/img/site/error2NavBar.jpg" class="imgEmailUser">
-            <button id="login" onclick="login()"><img src="assets/img/icon/user.png" alt="icone usuario"> <span class="spans">Login/Cadastro</span></button>
-            <button><a id="aCarrinho" href="Carrinho.html"><img src="assets/img/icon/cartIcon.png" alt="icone carrinho"><span class="spans">Carrinho</span></a></button>
+            <button id="login" onclick="login()"><img src="assets/img/icon/user.png" alt="icone usuario"></button>
+            <button id="btncarrinho"><a id="aCarrinho" href="Carrinho.html"><img src="assets/img/icon/cartIcon.png" alt="icone carrinho"></a></button>
         </section>
     </header>
 
@@ -48,14 +49,19 @@
             <li id="login2"><a class="aDivMenu" onclick="login()"><img src="assets/img/icon/user.png"> <span>Login/Cadastro</span></a></li>
             <li id="localImgUser"><img src="assets/img/site/error2NavBar.jpg" class="imgEmailUser"> <span>Trocar de conta</span></li>
             <li><button class="modoClaro" onclick="modoPage()"><span id="spanDark0">Tema</span></button></li>
+            <li><button id="notificacaoBtn"><img src="assets/img/icon/notificacao.png" alt=""> <span>Notificações</span><p class="temNotificacao"></p></button></li>
         </ul>
     </div>
+
+    <section id="abaNotificacao">
+    </section>
 
     <!--? btn duvida -->
     <p title="Alguma duvida? Clique aqui que eu resolvo para você!" id="duvidaBtn" class="move" ondblclick="abrirLocalDuvida()"></p>
 
     <section id="localDuvida">
-        <button id="fecharLocalDuvida" onclick="fecharLocalDuvida()"><span>x</span></button>
+        <div>
+            <button id="fecharLocalDuvida" onclick="fecharLocalDuvida()"><span>x</span></button>
 
         <div id="barralateralDuvidas">
             <!--? Imgs -->
@@ -187,17 +193,64 @@
         <!--! Adicionar banners -->
         <article id="Adicionar-banners">
             <h2>Adicionar banners</h2>
-            <p>Pra adicionar um banner vc tal coisa</p>
-            <img src="assets/img/duvida/admins.png" alt="">
+            <p>Pra adicionar adicionar banners, clique aqui.</p>
+            <img src="assets/img/duvida/tutoba.png" alt="tutorialbanner">
+            <p>irá aparecer esta tela flutuante.</p>
+            <img src="assets/img/duvida/tela flutuante.png" alt="aba flutuante">
+            <p>coloque a url das imagens de acordo com o tamanho, si ela for para pc (imagem grande) na primeira caixa, si ela for pequena (para smartphones) coloque na segunda caixa.</p>
+            <img src="assets/img/duvida/tamanhos.png" alt="tamanhos">
+            <h2>CUIDADO</h2>
+            <p>ao clicar aqui, você irá adicionar um banner a página, então cuidado para não por um banner errado no ar.</p>
+            <img src="assets/img/duvida/adicionar.png" alt="adicionar">
         </article>
 
+        <!--editar-banners-->
+        <article id="Editar-banners">
+        <h2>Editando um banner</h2>
+        <p>para editar um banner, click em um.</p>
+        <img src="assets/img/duvida/tutoba.png" alt="tutorial-banner">
+        <p>em seguida, click em editar. </p>
+        <img src="assets/img/duvida/editar banner.png" alt="editar banner">
+        <p>assim que clicar, irá aparecer a url original, troque a pela url que quer editar. em seguida clique em salvar.</p>
+        <img src="assets/img/duvida/url antiga pela nova..png" alt="salvando-urls-novas">
+        <p>assim você terá editado um banner.</p>
+        </article>
+
+        <!--excluir banners-->
+        <article id="Excluir-banners">
+            <h2>excluindo banner</h2>
+            <p>click no banner que deseja excluir.</p>
+            <img src="assets/img/duvida/tutoba.png" alt="tutorial-banner">
+            <h2>CUIDADO</h2>
+            <p>ao clicar em excluir, você excluirá permanentemente o banner.</p>
+            <img src="assets/img/duvida/excluir.png" alt="">
+        </article>
+
+        <!--editar uma categoria-->
+        <article id="Editar-categorias">
+        <h2>editando uma categoria</h2>
+        <p>em uma categoria, na página de administrador</p>
+        <img src="assets/img/duvida/categoria.png" alt="caegoria">
+        <p>ao clicar em qual das opções que queira modificar, aparecerá esta tela flutuante.</p>
+        <img src="assets/img/duvida/2tela flutuante.png" alt="tela flutuante">
+        <p>você pode modificar apenas o nome da categoria, pois aparentemente, Wender é prequiçoso e não colocou a função de editar imagem. em seguida, click em salvar. </p>
+        <img src="assets/img/duvida/salvar alterações.png" alt="salvar-alterações">
+        </article>
+
+        <!--excluir-categoias-->
+        <article id="Excluir-categoria">
+        <h2>excluindo categoria</h2>
+        <p>em uma categoria, na página de administrador. </p>
+        <img src="assets/img/duvida/categoria.png" alt="categoria">
+        ao
+        </article>
         <!--! Administradores -->
         <article id="Adicionar-admins">
             <h2>Adicionar um Novo Administrador</h2>
             <p>Clique duas vezes no icone de adicionar administrador</p>
             <img src="assets/img/duvida/admins.png">
             <p>Após isso digite o email do administrador no campo vazio e clique em <strong>Adcionar</strong></p>
-            <img src="assets/img/duvida/addAdmin.png">
+            <img src="assets/img/duvida/tela flutuante.png">
         </article>
 
         <article id="Excluir-admins">
@@ -207,6 +260,7 @@
             <p>Após isso clique no icone da <strong>lixeira</strong></p>
             <img src="assets/img/duvida/excluirAdmin.png">
         </article>
+        </div>
     </section>
 
     <!--? Banner Local -->
@@ -463,5 +517,6 @@
     <script src="assets/js/admin.js"></script>
     <script src="assets/js/pesquisar.js"></script>
     <script src="assets/js/duvida.js"></script>
+    <script src="assets/js/notificacao.js"></script>
 </body>
 </html>
